@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 10px;
+}
+
+span {
+    display: none;
+    width: 100%;
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+.active {
+    display: inline;
+}
+
+input:valid {
+    border: green solid 2px;
+    border-radius: 4px;
+}
+
+input:invalid {
+    border: red solid 2px;
+    border-radius: 4px;
+}
+
+span.good {
+    background-color: rgb(6, 73, 6);
+}

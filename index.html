@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js" defer></script>
+</head>
+<body>
+    <form id="practice-form" novalidate>
+        <label for="email">
+            Email:
+            <input type="email" id="email" required>
+        </label>
+        <span id="email-error" aria-live="polite"></span>
+
+        <label for="country">
+            Country:
+            <input type="text" id="country" minlength="3" required>
+        </label>
+        <span id="country-error" aria-live="polite"></span>
+
+        <label for="Zip Code">
+            Zip Code:
+            <input type="text" id="zip-code" pattern="^\d{4}$" required>
+        </label>
+        <span id="zip-code-error" aria-live="polite"></span>
+
+        <label for="password">
+            Password:
+            <input type="password" id="password" required>
+        </label>
+        
+        <label for="confirm-password">
+            Confirm Password:
+            <input type="password" id="confirm-password" required>
+        </label>
+        <span id="password-error" aria-live="polite" data-active></span>
+
+        <button type="submit">Submit</button>
+        <span id="submission-error" aria-live="polite"></span>
+    </form>
+</body>
+</html>
